@@ -14,15 +14,19 @@ gem 'puma'
 gem 'turbolinks'
 gem 'phantomjs', :require => 'phantomjs/poltergeist'
 gem 'rb-readline'
+gem "capybara"
+gem "poltergeist"
+gem 'byebug'
 
-group :development, :test do
-  gem 'rack_session_access'
-  gem "capybara"
-  gem "poltergeist"
-  gem "database_cleaner"
-  gem "pry-byebug"
-  gem "rspec-rails"
-end
+
+# group :development, :test do
+#   gem 'rack_session_access'
+#   gem "capybara"
+#   gem "poltergeist"
+#   gem "database_cleaner"
+#   gem "pry-byebug"
+#   gem "rspec-rails"
+# end
 
 group :test do
   gem 'rspec-collection_matchers'
